@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encuesta_Empresa_Mi_Chamba</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+</head>
+<body>
+<div id="contenedor">
+	<h2 id="encabezado">Cuestionario de Clima Laboral</h2>
+	<form id="formulario1" name="formulario1" method="post" action="data.php">
+  	<fieldset id="datos_personales">
+	<legend>Datos personales del Trabajador</legend>
+		<label for="nombre">Nombre de Trabajador:</label><br>
+		<input type="text" name="nombre" id="nombre"><br>
+		<label for="apellidos">Apellidos de Trabajador:</label><br>
+		<input type="text" name="apellidos" id="apellidos"><br>
+        <label for="puesto">Puesto de Trabajo:</label><br>
+		<input type="text" name="puesto" id="puesto"><br>
+		<label for="dni">DNI:</label><br>
+		<input type="text" name="dni" id="dni" maxlength="9"><br>
+		<label for="edad">Edad:</label><br>
+		<input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+		<label for="sexo">Sexo:</label><br>
+		<select id="sexo" name="sexo">
+		<option value="X" selected="selected">...</option>
+		<option value="M">Másculino</option>
+		<option value="F">Femenino</option>
+		</select>
+	</fieldset>
+	<fieldset id="tiempo">
+	<legend>Tiempo en la empresa</legend>
+		<input type="radio" name="empresa" value="1">1-2 años<br>
+		<input type="radio" name="empresa" value="2">3-5 años<br>
+        <input type="radio" name="empresa" value="3">5-10 años<br>
+        <input type="radio" name="empresa" value="4">10-mas<br>
+	</fieldset>
+	<fieldset id="grupo_opinion">
+		<legend>¿Tengo claro lo que se espera de mi trabajo?</legend>
+		<textarea id="opinion" name="opinion" rows="10" cols="50"></textarea>
+	</fieldset>
+    <fieldset id="grupo_opinion">
+		<legend>¿Creo que tengo oportunidades para crecer profesionalmente en esta empresa?</legend>
+		<textarea id="opinion" name="opinion" rows="10" cols="50"></textarea>
+	</fieldset>
+    <fieldset id="grupo_opinion">
+		<legend>¿He tenido oportunidad de innovar en mi trabajo?</legend>
+		<textarea id="opinion" name="opinion" rows="10" cols="50"></textarea>
+	</fieldset>
+    <fieldset id="grupo_opinion">
+		<legend>¿Me siento bien en mi trabajo?</legend>
+		<textarea id="opinion" name="opinion" rows="10" cols="50"></textarea>
+	</fieldset>
+
+	<br>
+	<input type="reset" value="Borrar formulario">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Enviar">
+  </form>
+</div>	
+</body>
+</html>
